@@ -1,22 +1,19 @@
 package com.musicplayer.musicplayerrestapi.models;
 
-import javax.persistence.*;
+
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
 
 public class Playlist {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	private Integer id;
 
 	private String name;
 
-	@ElementCollection
-	@OneToMany(cascade = CascadeType.PERSIST)
+
 	private List<Song> songlist;
 	
 	public Playlist() {
