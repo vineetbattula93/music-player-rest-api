@@ -14,5 +14,5 @@ public class SongTest {
 		String expectedResult = String.format("%d:%02d:%02d", 0,4,4);
 		junit.framework.Assert.assertEquals("getDurationPretty should convert a song's duration in seconds into the format mm:ss",prettyResult,expectedResult);
 	}
-		
+
 }
